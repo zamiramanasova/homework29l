@@ -18,5 +18,6 @@ public class Main {
         numbs.add(8);
         Optional<Integer> max = numbs.stream().filter(x -> x % 2 ==0).map(x -> x * x).max(Integer::compare);
         System.out.println(max.get());
+
     }
 }
